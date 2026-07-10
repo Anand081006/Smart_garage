@@ -1,0 +1,101 @@
+.services-page {
+  background: #f0f6ff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  padding-bottom: 60px;
+}
+
+/* Header */
+.services-header {
+  background: linear-gradient(to right, #0B2342, #2F80ED);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 16px;
+  color: #cbd5e1;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 50px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.service-card {
+  background: white;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 18px;
+  color: #0B2342;
+  margin: 0;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: #64748b;
+  flex: 1;
+}
+
+/* Price & Time */
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2F80ED;
+}
+
+.time {
+  font-size: 13px;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Button */
+.book-now-btn {
+  padding: 12px;
+  background: #2F80ED;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.book-now-btn:hover {
+  background: #0B2342;
+}

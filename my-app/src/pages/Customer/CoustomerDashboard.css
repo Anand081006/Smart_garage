@@ -1,0 +1,124 @@
+.dashboard {
+  padding: 40px;
+  background: #f0f6ff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+.welcome-box {
+  background: linear-gradient(to right, #0B2342, #2F80ED);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.welcome-box h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.welcome-box p {
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+
+.stats-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 150px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0B2342;
+}
+
+.stat-number.pending { color: #f59e0b; }
+.stat-number.progress { color: #2F80ED; }
+.stat-number.completed { color: #10b981; }
+
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.section h3 {
+  margin-bottom: 20px;
+  color: #0B2342;
+}
+
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.booking-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge.pending { background: #fef3c7; color: #f59e0b; }
+.badge.progress { background: #dbeafe; color: #2F80ED; }
+.badge.completed { background: #d1fae5; color: #10b981; }
+
+.actions-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 12px 24px;
+  background: #2F80ED;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.action-btn:hover {
+  background: #0B2342;
+}

@@ -1,0 +1,197 @@
+.home {
+  font-family: Arial, sans-serif;
+}
+
+
+.hero-text {
+  max-width: 600px;
+}
+
+.welcome-tag {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-bottom: 5px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin: 0 0 15px;
+  color: white;
+}
+
+.hero-text h1 span {
+  color: #EF4444;
+}
+
+.hero-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #e2e8f0;
+}
+
+.hero-desc {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+/* Book Button */
+.book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: #EF4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background: #DC2626;
+}
+
+/* Features Row */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.icon-circle {
+  background: #EF4444;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.feature-item h3 {
+  margin: 0 0 5px;
+  color: #0B2342;
+  font-size: 17px;
+}
+
+.feature-item p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Why Us */
+.why-us {
+  background: #f0f6ff;
+  padding: 70px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.why-us-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.why-us-text h2 {
+  color: #0B2342;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background: #EF4444;
+  margin: 0 auto 25px;
+  border-radius: 2px;
+}
+
+.why-us-text ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.why-us-text li {
+  font-size: 16px;
+  color: #1e293b;
+}
+
+/* Bottom Stats Bar */
+.bottom-box {
+  background: #18181B;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-circle.small {
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  background: #EF4444;
+  color: white;
+}
+
+.stat h4 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.divider {
+  width: 1px;
+  height: 50px;
+  background: #35506E;
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 60px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
