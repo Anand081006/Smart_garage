@@ -13,7 +13,7 @@ function Services() {
 
   const fetchServices = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/services/all");
+      const res = await fetch("https://smartgarage-production.up.railway.app/api/services/all");
       const data = await res.json();
       setServices(data);
     } catch (err) {

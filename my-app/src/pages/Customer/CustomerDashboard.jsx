@@ -16,7 +16,7 @@ function CustomerDashboard() {
 
   const fetchBookings = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/bookings/mybookings/${userName}`);
+      const response = await fetch(`https://smartgarage-production.up.railway.app/api/bookings/mybookings/${userName}`);
       const data = await response.json();
       setBookings(data);
     } catch (err) {
