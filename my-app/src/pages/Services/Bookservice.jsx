@@ -32,7 +32,7 @@ function Bookservice() {
 
   const fetchServices = async () => {
     try {
-      const res = await fetch("https://smartgarage-production.up.railway.app/api/services/all");
+      const res = await fetch("https://smart-garage-2.onrender.com/api/services/all");
       const data = await res.json();
       setServices(data);
     } catch (err) {
@@ -79,7 +79,7 @@ function Bookservice() {
     setError("");
 
     try {
-      const response = await fetch("https://smartgarage-production.up.railway.app/api/bookings/create", {
+      const response = await fetch("https://smart-garage-2.onrender.com/api/bookings/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

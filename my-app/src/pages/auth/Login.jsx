@@ -17,7 +17,7 @@ function Login({ setIsLoggedIn }) {
     const password = e.target.password.value;
 
     try {
-      const response = await fetch("https://smartgarage-production.up.railway.app/api/auth/login", {
+      const response = await fetch("https://smart-garage-2.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

@@ -24,7 +24,7 @@ function AdminDashboard() {
 
   const fetchBookings = async () => {
     try {
-      const res = await fetch("https://smartgarage-production.up.railway.app/api/bookings/all");
+      const res = await fetch("https://smart-garage-2.onrender.com/api/bookings/all");
       const data = await res.json();
       setBookings(data);
     } catch (err) {
@@ -35,7 +35,7 @@ function AdminDashboard() {
 
   const fetchCustomers = async () => {
     try {
-      const res = await fetch("https://smartgarage-production.up.railway.app/api/bookings/customers");
+      const res = await fetch("https://smart-garage-2.onrender.com/api/bookings/customers");
       const data = await res.json();
       setCustomers(data);
     } catch (err) {
@@ -45,7 +45,7 @@ function AdminDashboard() {
 
   const fetchServices = async () => {
     try {
-      const res = await fetch("https://smartgarage-production.up.railway.app/api/services/all");
+      const res = await fetch("https://smart-garage-2.onrender.com/api/services/all");
       const data = await res.json();
       setServices(data);
     } catch (err) {
@@ -55,7 +55,7 @@ function AdminDashboard() {
 
   const fetchDoorstepOrders = async () => {
     try {
-      const res = await fetch("https://smartgarage-production.up.railway.app/api/bookings/doorstep");
+      const res = await fetch("https://smart-garage-2.onrender.com/api/bookings/doorstep");
       const data = await res.json();
       setDoorstepOrders(data);
     } catch (err) {
@@ -65,7 +65,7 @@ function AdminDashboard() {
 
   const fetchMessages = async () => {
     try {
-      const res = await fetch("https://smartgarage-production.up.railway.app/api/contact/messages");
+      const res = await fetch("https://smart-garage-2.onrender.com/api/contact/messages");
       const data = await res.json();
       setMessages(data);
     } catch (err) {
@@ -75,7 +75,7 @@ function AdminDashboard() {
 
   const updateStatus = async (id, status) => {
     try {
-      const res = await fetch(`https://smartgarage-production.up.railway.app/api/bookings/status/${id}`, {
+      const res = await fetch(`https://smart-garage-2.onrender.com/api/bookings/status/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status }),
@@ -91,7 +91,7 @@ function AdminDashboard() {
 
   const handleAccept = async (id) => {
     try {
-      const res = await fetch(`https://smartgarage-production.up.railway.app/api/bookings/accept/${id}`, {
+      const res = await fetch(`https://smart-garage-2.onrender.com/api/bookings/accept/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: "inprogress" }),
@@ -109,7 +109,7 @@ function AdminDashboard() {
   const handleReject = async (id) => {
     if (window.confirm("Are you sure you want to reject this booking?")) {
       try {
-        const res = await fetch(`https://smartgarage-production.up.railway.app/api/bookings/accept/${id}`, {
+        const res = await fetch(`https://smart-garage-2.onrender.com/api/bookings/accept/${id}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ status: "rejected" }),
@@ -126,7 +126,7 @@ function AdminDashboard() {
 
   const handleAddService = async () => {
     try {
-      const res = await fetch("https://smartgarage-production.up.railway.app/api/services/add", {
+      const res = await fetch("https://smart-garage-2.onrender.com/api/services/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newService),
@@ -144,7 +144,7 @@ function AdminDashboard() {
 
   const handleEditService = async () => {
     try {
-      const res = await fetch(`https://smartgarage-production.up.railway.app/api/services/edit/${editService.id}`, {
+      const res = await fetch(`https://smart-garage-2.onrender.com/api/services/edit/${editService.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(editService),
@@ -162,7 +162,7 @@ function AdminDashboard() {
   const handleDeleteService = async (id) => {
     if (window.confirm("Are you sure you want to delete this service?")) {
       try {
-        const res = await fetch(`https://smartgarage-production.up.railway.app/api/services/delete/${id}`, {
+        const res = await fetch(`https://smart-garage-2.onrender.com/api/services/delete/${id}`, {
           method: "DELETE",
         });
         if (res.ok) {
